@@ -1,119 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+       font-family: 'Nunito', sans-serif;
+   }
 
-*{
+  .réalisons{
+  
+   text-align: center;
+}
 
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-    max-width: 1440px;
-    
-
+.réalisons-infos{
+      text-align: center;
+     font-size: 18px;
+}   
+.chaque{
+    text-align: center;
+    font-size: 9px;
+    color: rgb(127,152,184);
    
-
 }
-
-// header
-
-$Text-color-header:rgb(61, 61,63);
-@mixin navHover {
-    font-size: 18px;
-    color: black;
-    text-shadow: 2px 2px 8px rgba(161, 160, 160, 0.562);;
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 40px;
+    color: rgb(179, 183, 185);
+   }
+    h4{
+        color: rgb(58, 57, 57);
+    }
+   
+  section{
+     
+background-color: rgb(238, 240, 241);
+  }
     
+.bara{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
+.bara{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #878888;
+  
+  
+}
+h3{
+  margin-top: 10px;
+ 
+  }
 
-header{
-    margin-top: 45px;
-    nav{
+  .bara--A{
+
+    strong{
+
+      span{
+        color: rgb(127,152,184);
+      }
+    }
+
+  }
+
+  .spn {
+
+    color: rgb(127,152,184);
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .container{
         display: flex;
         justify-content: space-between;
-        margin-left: 90px;
-        margin-right: 90px;
-            ul{
-                list-style: none;
-                display: flex; 
-                margin-top: 32px;
-                li{
-                    margin-left: 18px;
-                }
-                li:hover{
-                    @include navHover;
-                }
-                a{
-                    text-decoration: none;
-                    color:$Text-color-header;
-                }
-            }
-        }
-            
-        .header_btn1{
-            background-color:$Text-color-header;
-            color: white;
-            border-radius: 10px;
-            height: 43px;
-            width: 135px;
-            font-size: 17px;
-            margin-top: 14px;
-        }
-    }
-    .header_div_2{
-        margin-top: 81px;
-        h1{
-            margin-left: 90px;
-            font-weight: 100;
-            font-size: 54px;
-            color: $Text-color-header;
-            padding-top: 25px;
-        }
-        p{
-            margin-left: 90px;
-            margin-top: 13px;
-            color: $Text-color-header;
-            line-height: 23px;
-            font-size: 19px;
-            video{
-                float: right;
-                margin-top: -372px;
-                height: 507px;
-                width: 760px;
-            }
-        }
-        .header_btn2{ 
-            margin-left: 90px;
-            border-radius: 8px;
-            height: 54px;
-            width: 248px;
-            font-size: 19px;
-            background-image: linear-gradient(to right,#5554a4 , #3da5c6);
-            color: white;
-            box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        }
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
 
     }
-
-// team
-
-#team{
-        background-color:#e8eaef;
-        
-
-        .team_bigTitle{
-            text-align: center;
-            padding-top: 20px;
-            color: #696464;
-            font-size: 30px;
-           
-
-            
-        }
-
-        .members{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-
-}
+  
