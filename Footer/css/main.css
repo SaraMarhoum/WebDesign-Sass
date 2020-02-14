@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+#footer #boutton button {
+  z-index: 99;
+  border-radius: 10px;
+  width: 256px;
+  height: 64px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #5cdce6;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer; }
+  #footer #boutton button:hover {
+    background-color: white;
+    color: black; }
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white; }
+
+#footer {
+  z-index: auto;
+  background: url(../img/footer-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh; }
+  #footer .head {
+    text-align: center;
+    z-index: 2; }
+    #footer .head h1 {
+      padding-top: 80px;
+      font-size: 55px; }
+    #footer .head h5 {
+      font-size: 24px; }
+    #footer .head #para {
+      margin-top: 50px;
+      font-size: 20px; }
+  #footer #boutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; }
+    #footer #boutton #btn1 {
+      background-color: white;
+      color: black; }
+      #footer #boutton #btn1:hover {
+        background-color: #5cdce6;
+        color: white; }
+    #footer #boutton p {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto; }
+    #footer #boutton #email {
+      position: relative;
+      right: 7%; }
+
+#fin {
+  display: flex;
+  justify-content: space-between;
+  margin: 130px auto 0 auto;
+  width: 90%; }
+  #fin p {
+    text-align: left;
+    left: 0; }
+  #fin #pages {
+    display: inline-flex;
+    align-items: flex-end; }
+    #fin #pages .con {
+      margin: 10px 5px 0 5px; }
+      #fin #pages .con svg {
+        color: white;
+        background-color: white; }
+
+.CR {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 40px auto 0 auto;
+  justify-content: space-between; }
+  .CR .left a {
+    text-decoration: underline; }
+    .CR .left a:first-child {
+      margin-right: 20px; }

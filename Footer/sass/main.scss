@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+
+%btn {
+  z-index: 99;
+  border-radius: 10px;
+  width: 256px;
+  height: 64px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #5cdce6;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+
+#footer {
+    z-index: auto;
+    background: url(../img/footer-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+
+  .head {
+    text-align: center;
+    z-index: 2;
+    h1 {
+      padding-top: 80px;
+      font-size: 55px;
+    }
+    h5 {
+      font-size: 24px;
+    }
+    #para {
+      margin-top: 50px;
+      font-size: 20px;
+    }
+  }
+  #boutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+        button {
+          @extend %btn;
+        }
+        #btn1 {
+          background-color: white;
+          color: black;
+
+          &:hover {
+
+            background-color: #5cdce6;
+            color: white;
+          }
+    }
+          p {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+          }
+          #email {
+              position: relative;
+              right: 7%;
+          }
+            
+        }
+}
+#fin {
+  display: flex;
+  justify-content: space-between;
+  margin: 130px auto 0 auto;
+  width: 90%;
+
+  p {
+    text-align: left;
+    left: 0;
+  }
+  #pages {
+    display: inline-flex;
+    align-items: flex-end;
+    .con {
+      margin: 10px 5px 0 5px;
+      svg {
+        color: white;
+        background-color: white;
+      }
+    }
+  }
+}
+.CR {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 40px auto 0 auto;
+  justify-content: space-between;
+  .left {
+    a {
+      text-decoration: underline;
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+
+}
