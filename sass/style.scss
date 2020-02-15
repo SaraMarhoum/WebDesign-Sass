@@ -294,8 +294,9 @@ h3{
       background: url(../img/footer-image.png);
       background-size: cover;
       background-repeat: no-repeat;
-      width: 100vw;
+      width: 98.9vw;
       height: auto;
+      margin-top: -6px;
   
     .head {
       text-align: center;
@@ -373,6 +374,7 @@ h3{
     .left {
       a {
         text-decoration: underline;
+        color: white;
         &:first-child {
           margin-right: 20px;
         }

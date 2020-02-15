@@ -213,8 +213,9 @@ h3 {
   background: url(../img/footer-image.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: auto; }
+  width: 98.9vw;
+  height: auto;
+  margin-top: -6px; }
   #footer .head {
     text-align: center;
     z-index: 2; }
@@ -269,6 +270,7 @@ h3 {
   margin: 40px auto 0 auto;
   justify-content: space-between; }
   .CR .left a {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: white; }
     .CR .left a:first-child {
       margin-right: 20px; }
