@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-sass</title>
+    <!-- Link to Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="nav_header_contact">
+        <div class="nav_header_contact_container">
+            <div class="nav">
+                <a class="nav_header_logo_contact" href="index.html"><img src="img/logo-youcode.png" alt=""></a>
+                <label id="navconhead" for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div class="menu">
+                    <a href="#">Visite guidée</a>
+                    <a href="#">Etudes de cas</a>
+                    <a href="#">Contactez-nous</a>
+                    <a href="#">Obtenez un devis</a>
+                    <button id="btn_nav_header_contact">Votre devis</button>
+                </div>
+            </div>
+        </div>
+        
+
+    </section><br><br>
+
+    <h1 style="text-align: center; ">Contactez nous</h1><br><hr style="margin-left: 50px;margin-right: 50px;"><br><br>
+
+    <section class="contact">
+
+        <div class="contact_container">
+        <label for="status">Je suis</label>
+         <select id="status">
+            <option value="none">--</option>
+            <option value="etreprise">Entreprise</option>
+            <option value="pro">Professionnel</option>
+            <option value="CS">Candidat spontané</option>
+            <option value="other">Autre</option>
+         </select><br>
+         <span id="stat404" classe="error"></span><br>
+
+        <form onsubmit="return validation()">
+            <label for="name">Vos nom-prénom*</label><br>
+            <input type="text" id="name" name="name" class="deco" value="" autocomplete="off"><br>
+            <span id="name404" classe="error"></span><br><br>
+
+            <label for="mail">Votre email*</label><br>
+            <input type="email" id="mail" name="email" class="deco" value=""><br>
+            <span id="mail404" classe="error"></span><br><br>
+
+            <label for="objet">Objet</label><br>
+            <input type="objet" id="objet" name="objet" class="deco" value=""><br><br>
+
+            <label for="message">Votre message*</label><br>
+            <textarea id="message"></textarea><br>
+            <span id="message404" classe="error"></span><br>
+
+            <input type="submit" value="Submit" id="subbutton">
+          </form>
+        </div>
+
+        <img src="img/map-contact.png" id="img_cnt">
+
+    </section><br><br>
+
+    <section id="footer">
+
+        <div class="head">
+
+            <h1>Laissez-nous vous épater</h1>
+            <h5>Prét à aller plus loin ?</h5>
+            <p id="para">Commençons par parler de votre projet ou de votre idée et <br> découvrons comment YouCode
+                Studio peut vous aider à <br> dévelopoer votre entreprise.</p>
+
+            <div id="boutton">
+                <div>
+                    <button href="#" id="btn1">Obtenir un devis</button>
+                    <p id="email">contactez-nous@YouCodeStudio.org</p>
+                </div>
+                <div>
+                    <button href="#">Consultation libre</button>
+                    <p >0600-123-456</p>
+                </div>
+            </div>
+
+
+
+            <div id="fin">
+                <div id="adresse">
+                    <p>Visitez-nous:<br>Boulevard moulay youssef,<br>Youssoufia,Maroc</p>
+                </div>
+
+                <div id="pages">
+                    <div class="con">
+                        <a href="#"><img src="./icon/facebook.png" alt="" width="50px"></a>
+                    </div>
+
+                    <div class="con">
+                        <a href=""><img src="./icon/youtube-logotype.png" alt="" width="50px"></a>
+                    </div>
+
+                    <div class="con">
+                        <a href=""><img src="./icon/linkedin.png" alt="" width="50px"></a>
+                    </div>
+
+                    <div class="con">
+                        <a href=""><img src="./icon/twitter-social-logotype.png" alt="" width="50px"></a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="CR">
+                <div class="left">
+                    <a href="#">AWARDS</a>
+                    <a href="#">CLIENTS</a>
+                </div>
+                <div class="right">
+                    <p>© WSTUDIO ALL RIGHTS RESERVED 2017</p>
+                </div>
+            </div>
+
+        </div>
+        <script src="contact.js"></script>
+</body>
+
+</html>

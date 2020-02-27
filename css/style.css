@@ -10,40 +10,33 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
-
-.header__text {
-  max-width: 500px;
-  margin: 5rem 2rem; }
-
-.header__text h1 {
-  font-size: 3rem;
-  opacity: 0.7;
-  margin-bottom: 2Rem; }
-
-.header__text p {
-  font-weight: bold;
-  opacity: 0.5;
-  margin-bottom: 5Rem; }
-
-.header__text a {
-  background-image: linear-gradient(to right, #5555a5, #5165b2, #3ea3c5, #3da6c6); }
-
-.header__video {
-  background-image: linear-gradient(140deg, #4c6d7de0, #5a576fbb); }
-
-.header__video video {
-  height: 600px;
-  width: 800px; }
-
-@media only screen and (max-width: 760px) {
-  .header__video video {
+  .header .header__text {
+    max-width: 500px;
+    margin: 5rem 2rem; }
+    .header .header__text .header__text h1 {
+      font-size: 3rem;
+      opacity: 0.7;
+      margin-bottom: 2Rem; }
+    .header .header__text .header__text p {
+      font-weight: bold;
+      opacity: 0.5;
+      margin-bottom: 5Rem; }
+    .header .header__text .header__text a {
+      background-image: linear-gradient(to right, #5555a5, #5165b2, #3ea3c5, #3da6c6); }
+  .header .header__video {
     height: 600px;
-    width: 720px; } }
-
-@media only screen and (max-width: 375px) {
-  .header__video video {
-    height: 370px;
-    width: 345px; } }
+    width: 800px; }
+    .header .header__video .header__video video {
+      width: 789px;
+      height: 617px; }
+  @media only screen and (max-width: 760px) {
+    .header .header__video video {
+      height: 600px;
+      width: 720px; } }
+  @media only screen and (max-width: 375px) {
+    .header .header__video video {
+      height: 370px;
+      width: 345px; } }
 
 #réalisons {
   text-align: center;
@@ -71,7 +64,7 @@
 h4 {
   color: #3a3939; }
 
-section {
+#réalisons {
   background-color: #eef0f1; }
 
 .bara {
@@ -202,3 +195,101 @@ h3 {
     color: white; }
     .CR .left a:first-child {
       margin-right: 20px; }
+
+.nav_header_contact {
+  background: url(../img/team-member-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; }
+  .nav_header_contact .nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding-top: 30px; }
+  .nav_header_contact .nav img {
+    float: left;
+    margin-left: 83px; }
+  .nav_header_contact .menu {
+    margin: 0 30px 0 0; }
+  .nav_header_contact .menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px; }
+  .nav_header_contact #navconhead {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right; }
+  .nav_header_contact #toggle {
+    display: none; }
+  .nav_header_contact #btn_nav_header_contact {
+    background-color: #353535;
+    color: white;
+    margin-top: -9px;
+    width: 114px;
+    height: 37px;
+    border-radius: 11px;
+    margin-left: 113px; }
+  @media only screen and (max-width: 900px) {
+    .nav_header_contact #navconhead {
+      display: block;
+      cursor: pointer; }
+    .nav_header_contact .nav img {
+      margin-left: 10px; }
+    .nav_header_contact .menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+      background-color: rgba(76, 76, 76, 0.91); }
+    .nav_header_contact .menu a {
+      display: block;
+      border-bottom: 1px solid #EAEAEB;
+      margin: 0;
+      padding-top: 4px;
+      color: aliceblue; }
+    .nav_header_contact #btn_nav_header_contact {
+      margin-left: 0px; }
+    .nav_header_contact #toggle:checked + .menu {
+      display: block; } }
+
+.contact {
+  margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  .contact #img_cnt {
+    height: 497px;
+    width: 772px;
+    margin-top: 56px;
+    margin-right: 10px; }
+  .contact textarea {
+    width: 31em;
+    height: 15em; }
+  .contact form #subbutton {
+    background-image: linear-gradient(to right, #5555a5, #5165b2, #3ea3c5, #3da6c6);
+    border-radius: 15px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer; }
+  .contact form .deco {
+    width: 495px;
+    height: 35px; }
+  .contact form span {
+    color: lightcoral; }
+
+@media only screen and (max-width: 990px) {
+  .contact {
+    margin-left: 10px; } }
+
+@media only screen and (max-width: 800px) {
+  .contact #img_cnt {
+    height: 356px;
+    width: 489px; } }

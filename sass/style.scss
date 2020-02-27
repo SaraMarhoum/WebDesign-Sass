@@ -46,12 +46,12 @@
       height: 370px;
       width: 345px; }
 }
-
+}
 
 
 // Main1
 
-  #réalisons{
+#réalisons{
   
    text-align: center;
    margin-top: -59px;
@@ -82,7 +82,7 @@
         color: rgb(58, 57, 57);
     }
    
-  section{
+  #réalisons{
      
 background-color: rgb(238, 240, 241);
   }
@@ -162,6 +162,8 @@ h3{
 
 }
 
+// Footer
+
 %btn {
     z-index: 99;
     border-radius: 10px;
@@ -179,10 +181,10 @@ h3{
       background-color: white;
       color: black;
     }
-  }
+}
   
   
-  #footer {
+#footer {
       color: white;
       z-index: auto;
       background: url(../img/footer-image.png);
@@ -274,7 +276,6 @@ h3{
         }
       }
     }
-  }
-  @media only screen and (max-width: 768px) {
-  
-  }
+}
+
+@import "contactsass";

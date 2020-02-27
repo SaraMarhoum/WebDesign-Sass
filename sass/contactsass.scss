@@ -1,0 +1,140 @@
+.nav_header_contact{
+        background : url(../img/team-member-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        .nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding-top: 30px;
+}
+.nav img{
+    float: left;
+    margin-left: 83px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+#navconhead {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+#btn_nav_header_contact {
+      background-color: #353535;
+      color: white;
+      margin-top: -9px;
+      width: 114px;
+      height: 37px;
+      border-radius: 11px;
+      margin-left: 113px;
+}
+
+@media only screen and (max-width: 900px) {
+    #navconhead {
+        display: block;
+        cursor: pointer;
+    }
+    .nav img{
+        margin-left: 10px;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: rgba(76,76,76,0.91);
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        padding-top: 4px;
+        color: aliceblue;
+     
+    }
+    #btn_nav_header_contact {
+      margin-left: 0px;
+}
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+}
+
+
+
+// background-color: rgb(251, 251, 255);
+    .contact {
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    #img_cnt{
+        height: 497px;
+        width: 772px;
+        margin-top: 56px;
+        margin-right: 10px;
+    }
+      textarea {
+	  width: 31em;
+      height: 15em;
+      }
+    form{
+        #subbutton{
+            background-image: linear-gradient(to right, #5555a5, #5165b2, #3ea3c5, #3da6c6);
+            border-radius: 15px;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 15px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .deco{
+            width: 495px;
+            height: 35px;
+        }
+        span{
+            color: lightcoral;
+        }
+    }
+  }
+  @media only screen and (max-width: 990px) {
+
+    .contact{
+        margin-left: 10px;
+    }
+
+  }
+
+@media only screen and (max-width: 800px) {
+
+    .contact #img_cnt{
+        height: 356px;
+        width: 489px;
+    }
+
+  }
+
+
+
